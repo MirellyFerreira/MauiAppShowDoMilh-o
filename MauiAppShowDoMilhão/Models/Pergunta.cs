@@ -8,7 +8,7 @@ namespace MauiAppShowDoMilhão.Models
 {
     public class Pergunta
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         public string Enunciado { get; set; }
 
