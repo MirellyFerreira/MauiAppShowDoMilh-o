@@ -149,12 +149,121 @@ namespace MauiAppShowDoMilhão
                 }
             },
 
+            new Pergunta
+            {
 
+                Id=11,
+                Enunciado = "Como se chama o lugar onde se guardam vinhos?",
+                Alternativas = new()
+                {
 
+                    new Alternativa { Correta = true, Descricao = "ADEGA"},
+                    new Alternativa { Correta = false, Descricao = "BIBLIOTECA"},
+                    new Alternativa { Correta = false, Descricao = "SÓTÃO"},
+                    new Alternativa { Correta = false, Descricao = "SALA"},
+                }
+            },
 
+            new Pergunta
+            {
+                Id=12,
+                Enunciado = "Qual era o código da identidade secreta de James Bond?",
+                Alternativas = new()
+                {
+
+                    new Alternativa { Correta = false, Descricao = "707"},
+                    new Alternativa { Correta = false, Descricao = "907"},
+                    new Alternativa { Correta = true, Descricao = "007"},
+                    new Alternativa { Correta = false, Descricao = "008"},
+                }
+
+            },
+
+            new Pergunta
+            {
+                Id =13,
+                Enunciado = "Qual ator do cinema brasileiro é conhecido por ter unhas enormes?",
+                Alternativas = new()
+                {
+
+                    new Alternativa { Correta = false, Descricao = "PENADINHO"},
+                    new Alternativa { Correta = true, Descricao = "ZÉ DO CAIXÃO"},
+                    new Alternativa { Correta = false, Descricao = "ZÉ DO CASARÃO"},
+                    new Alternativa { Correta = false, Descricao = "TONINHO DO DIABO"},
+                }
+
+            },
+
+            new Pergunta
+            {
+                Id = 14,
+                Enunciado = "Quando é comemorado o dia da mentira no Brasil?",
+                Alternativas = new()
+                {
+
+                    new Alternativa { Correta = false, Descricao = "28 DE DEZEMBRO"},
+                    new Alternativa { Correta = false, Descricao = "7 DE SETEMBRO"},
+                    new Alternativa { Correta = true, Descricao = "1 DE ABRIL"},
+                    new Alternativa { Correta = false, Descricao = "15 DE NOVEMBRO"},
+                }
+
+            },
+
+            new Pergunta
+            {
+                Id=15,
+                Enunciado = "Quantos titulares possui uma equipe de vôlei?",
+                Alternativas = new()
+                {
+
+                    new Alternativa { Correta = false, Descricao = "CINCO"},
+                    new Alternativa { Correta = true, Descricao = "SEIS"},
+                    new Alternativa { Correta = false, Descricao = "SETE"},
+                    new Alternativa { Correta = false, Descricao = "OITO"},
+                }
+            },
 
         };
-        
+
+        List<Pergunta> perguntas_medias = new()
+        {
+            new Pergunta
+            {
+                 Id = 1,
+                 Enunciado = "Que animais são criados nas pocilgas?",
+                 Alternativas = new()
+                 {
+                     new Alternativa { Correta = false, Descricao = "CAMELO"},
+                     new Alternativa { Correta = false, Descricao = "BÚFALOS"},
+                     new Alternativa { Correta = false, Descricao = "CARNEIROS"},
+                     new Alternativa { Correta = true, Descricao = "PORCOS"},
+
+                 }
+            },
+
+            new Pergunta
+            {
+                Id= 2,
+                Enunciado = "Que colônia britânica foi devolvida à China em 1997?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "PEQUIM"},
+                    new Alternativa { Correta = false, Descricao = "HANÓI"},
+                    new Alternativa { Correta = true, Descricao = "HONG KONG"},
+                    new Alternativa { Correta = false, Descricao = "HIROSHIMA"},
+
+                }
+            },
+
+            new Pergunta
+            {
+                Id=3,
+                Enunciado = ""
+            }
+
+        };
+
+
         public App()
         {
             InitializeComponent();
