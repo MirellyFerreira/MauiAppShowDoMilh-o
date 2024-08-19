@@ -1,4 +1,5 @@
 ﻿using MauiAppShowDoMilhão.Models;
+using System.Security.AccessControl;
 
 namespace MauiAppShowDoMilhão
 {
@@ -258,7 +259,97 @@ namespace MauiAppShowDoMilhão
             new Pergunta
             {
                 Id=3,
-                Enunciado = ""
+                Enunciado = "Como é chamada a doença que causa perda desigual da melanina?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "ASTIGMATISMO"},
+                    new Alternativa { Correta = false, Descricao = "TENDINITE"},
+                    new Alternativa { Correta = true, Descricao = "VITILIGO"},
+                    new Alternativa { Correta = false, Descricao = "VITINGA"},
+                }
+            },
+
+            new Pergunta
+            {
+                Id = 4,
+                Enunciado = "O que os filatelistas colecionam?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "QUADROS"},
+                    new Alternativa { Correta = true, Descricao = "SELOS"},
+                    new Alternativa { Correta = false, Descricao = "FIGURINHAS"},
+                    new Alternativa { Correta = false, Descricao = "MOEDAS"},
+
+                }
+            },
+
+            new Pergunta
+            {
+                Id = 5,
+                Enunciado = "Em que cidade está situada a famosa Praça Vermelha?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = true, Descricao = "MOSCOU"},
+                    new Alternativa { Correta = false, Descricao = "BERLIM"},
+                    new Alternativa { Correta = false, Descricao = "PARIS"},
+                    new Alternativa { Correta = false, Descricao = "ROMA"},
+                }
+            },
+
+            new Pergunta
+            {
+                Id= 6,
+                Enunciado ="Qual é o nome do vulcão que ,sepultou cidades na Itália no ano de 79?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "VÊNUS"},
+                    new Alternativa { Correta = true, Descricao = "VÊSUVIO"},
+                    new Alternativa { Correta = false, Descricao = "VARSÓVIA"},
+                    new Alternativa { Correta = false, Descricao = "VENEZA"},
+                }
+
+            },
+
+            new Pergunta
+            {
+                Id= 7,
+                Enunciado= "Qual é a história que Francis Ford Coppola dirigiu em três partes?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "TITANIC"},
+                    new Alternativa { Correta = false, Descricao = "SEXTA - FEIRA 13"},
+                    new Alternativa { Correta = true, Descricao = "O PODEROSO CHEFÂO"},
+                    new Alternativa { Correta = false, Descricao = "GUERRA NAS ESTRELRAS"},
+                }
+
+            },
+
+            new Pergunta
+            {
+                Id = 8,
+                Enunciado = "Quem disse a frase: “Vim, vi e venci”?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "MARCO ANTONIO"},
+                    new Alternativa { Correta = false, Descricao = "CALIGULA"},
+                    new Alternativa { Correta = false, Descricao = "NERO"},
+                    new Alternativa { Correta = true, Descricao = "JULIO CÉSAR"},
+                }
+
+                
+            },
+
+            new Pergunta
+            {
+                Id=9,
+                Enunciado = "Quais são os naipes vermelhos do baralho?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "COPAS E PAUS"},
+                    new Alternativa { Correta = true, Descricao = "OUROS E COPAS"},
+                    new Alternativa { Correta = false, Descricao = "PAUS E OUROS"},
+                    new Alternativa { Correta = false, Descricao = "ESPADAS E PAUS"},
+                }
             }
 
         };
