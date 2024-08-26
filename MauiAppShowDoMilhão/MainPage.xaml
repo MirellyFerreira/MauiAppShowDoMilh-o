@@ -3,6 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppShowDoMilhão.MainPage">
 
+    <ContentPage.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="VisualStateManeger.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CheckedStates">
+                        <VisualState x:Name="Checked">
+                            <VisualState.Setters>
+                                <Setter Property="TextColor"
+                                    Value="green"/>
+                            <Setter Property="Opacity"
+                                    Value="1"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name=Unchecked">
+                          <VisualState.Setters>
+                              
+                              
+                          </VisualState.Setters>
+                     </VisualState>          
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"

@@ -350,8 +350,66 @@ namespace MauiAppShowDoMilhão
                     new Alternativa { Correta = false, Descricao = "PAUS E OUROS"},
                     new Alternativa { Correta = false, Descricao = "ESPADAS E PAUS"},
                 }
-            }
 
+
+            },
+
+            new Pergunta
+            {
+                Id=10,
+                Enunciado = "Qual é o país que participou de todas as copas do mundo de futebol, até 1998?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao= "ITÁLIA"},
+                    new Alternativa { Correta = false, Descricao = "URUGUAI"},
+                    new Alternativa { Correta = false, Descricao = "ARGENTINA"},
+                    new Alternativa { Correta = true, Descricao = "BRASIL"},
+                }
+
+
+            },
+
+        };
+
+        List<Pergunta> perguntas_dificeis = new()
+        {
+
+            new Pergunta
+            {
+                Id = 1,
+                Enunciado = "Qual produto gerou guerras e conflitos no século XX?",
+                Alternativas= new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ÁLCOOL" },
+                    new Alternativa{ Correta = true, Descricao = "PETRÓLEO"},
+                    new Alternativa{ Correta = false, Descricao= "OURO" },
+                    new Alternativa{ Correta = false, Descricao= "ALUMÍNIO" },
+                }
+
+            },
+
+            new Pergunta
+            {
+                Id= 2,
+                Enunciado = "Em que país Leonardo da Vinci viveu seus últimos dias?",
+                Alternativas = new()
+                {
+                    new Alternativa{ Correta = false, Descricao = "ESPANHA" },
+                    new Alternativa{ Correta = false, Descricao = "HOLANDA"},
+                    new Alternativa{ Correta = true, Descricao = "FRANÇA"},
+                    new Alternativa{ Correta = false, Descricao = "ITÁLIA"},
+                }
+            },
+
+            new Pergunta
+            {
+                Id=3,
+                Enunciado = "Qual foi o primeiro presidente do Brasil eleito pelo povo?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = ""}
+                }
+            }
         };
 
 
