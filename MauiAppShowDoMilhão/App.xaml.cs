@@ -1,4 +1,5 @@
 ﻿using MauiAppShowDoMilhão.Models;
+using System.Collections.Generic;
 using System.Security.AccessControl;
 
 namespace MauiAppShowDoMilhão
@@ -404,14 +405,133 @@ namespace MauiAppShowDoMilhão
             new Pergunta
             {
                 Id=3,
-                Enunciado = "Qual foi o primeiro presidente do Brasil eleito pelo povo?",
+                Enunciado = "Quem ganhou a 1ª medalha de ouro olímpico para o Brasil",
                 Alternativas = new()
                 {
-                    new Alternativa { Correta = false, Descricao = ""}
+                    new Alternativa { Correta = false, Descricao = "AFRANIO ANTONIO COSTA"},
+                    new Alternativa { Correta = true, Descricao = "GUILHERME PARAENSE"},
+                    new Alternativa { Correta = false, Descricao = "FERNANDO SOLEDADE"},
+                    new Alternativa { Correta = false, Descricao = "SEBASTIÃO WOLF"},
                 }
-            }
+            },
+
+             new Pergunta
+             {
+                Id=4,
+                Enunciado = "Qual atleta foi desclassificado por uso de doping nas Olimpíadas de 1988?",
+                Alternativas = new()
+                { 
+                    new Alternativa { Correta = false, Descricao = "MIKE POWELL"},
+                    new Alternativa { Correta = true, Descricao = "BEN JOHNSON"},
+                    new Alternativa { Correta = false, Descricao = "CARL LEWIS"},
+                    new Alternativa { Correta = false, Descricao = "LINFORD CHRISTIE"},
+                }
+             },
+
+             new Pergunta
+             {
+                Id=5,
+                Enunciado = "O que construía Stradivarius?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "CASAS"},
+                    new Alternativa { Correta = true, Descricao = "VIOLINOS"},
+                    new Alternativa { Correta = false, Descricao = "ARMAS"},
+                    new Alternativa { Correta = false, Descricao = "ESTRADAS"},
+                }
+             },
+
+             new Pergunta
+             {
+                Id=6,
+                Enunciado = "A que país deve-se viajar para subir o Monte Parnaso?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "ITÁLIA"},
+                    new Alternativa { Correta = false, Descricao = "FRANÇA"},
+                    new Alternativa { Correta = true, Descricao = "GRÉCIA"},
+                    new Alternativa { Correta = false, Descricao = "TURQUIA"},
+                }
+             },
+
+             new Pergunta
+             { 
+                Id=7,
+                Enunciado = "Em que ano foi inaugurada a estátua do Cristo Redentor no Rio de Janeiro?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "1921"},
+                    new Alternativa { Correta = false, Descricao = "1941"},
+                    new Alternativa { Correta = true, Descricao = "1931"},
+                    new Alternativa { Correta = false, Descricao = "1951"},
+                }
+             },
+
+             new Pergunta
+             {
+                Id=8,
+                Enunciado = "Que significa o prefixo exo?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "DENTRO DE"},
+                    new Alternativa { Correta = false, Descricao = "DEBAIXO DE"},
+                    new Alternativa { Correta = true, Descricao = "FORA DE"},
+                    new Alternativa { Correta = false, Descricao = "ATRÁS DE"},
+                }
+             },
+
+             new Pergunta
+             {
+                Id=9,
+                Enunciado = "Que nome recebe a foz de um rio que se abre para o mar?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "ALAGADO"},
+                    new Alternativa { Correta = false, Descricao = "MANGUEZAL"},
+                    new Alternativa { Correta = false, Descricao = "PÂNTANO"},
+                    new Alternativa { Correta = true, Descricao = "ESTUÁRIO"},
+                }
+             },
+
+             new Pergunta
+             {
+                Id=10,
+                Enunciado = "Em que país você pode gastar rublos?",
+                Alternativas = new()
+                {
+                    new Alternativa { Correta = false, Descricao = "HOLANDA"},
+                    new Alternativa { Correta = false, Descricao = "ESPANHA"},
+                    new Alternativa { Correta = false, Descricao = "ÁFRICA DO SUL"},
+                    new Alternativa { Correta = true, Descricao = "RÚSSIA"},
+                }
+             },
+
+        };
+        List<Pergunta> perguntas_sorteadas = new()
+        {
+
         };
 
+        public static Pergunta getRadowPerguntaFacil()
+        {
+            Random r = new Random();
+
+            Pergunta pergunta_sorteada;
+
+            while (true)
+            {
+                int sorteado = r.Next(1, 15);
+                pergunta_sorteada = perguntas_faceis[sorteado];
+
+                if (!perguntas_sorteadas.Contains(pergunta_sorteada))
+                {
+                    perguntas_sorteadas.Add(pergunta_sorteada);
+                    break;
+                }
+            }
+            return pergunta_sorteada;
+        }
+        
 
         public App()
         {
