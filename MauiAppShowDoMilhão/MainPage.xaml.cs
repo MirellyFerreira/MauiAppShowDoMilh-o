@@ -20,6 +20,28 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            this.BindingContext = App.getRadowPerguntaFacil();
+        }
+
+        private async void Button_Clicked_Proxima(object sender, EventArgs e)
+        {
+            bool acertou = false;
+            string resp = "";
+            bool valor;
+
+            if (alt0.IsChecked)
+            {
+                if ((bool)) alt0.Value){
+                    acertou = true;
+                    resp = alt0.Content.ToString();
+                }
+            }
+
+
+        }
     }
 
 }
